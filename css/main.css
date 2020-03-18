@@ -95,6 +95,19 @@ ul {
     list-style: circle;
 }
 
+/* SKILLS */
+.skillset {
+    padding-bottom: 30px;
+}
+
+.skill-progress {
+    background: gray;
+    border: 1px solid gray;
+    border-radius: 15px;
+    width: 95%;
+    height: 2vh;
+}
+
 /* PORTFOLIO PROJECTS */
 
 .portfolio-project {
