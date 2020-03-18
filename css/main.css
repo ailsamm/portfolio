@@ -12,8 +12,7 @@
 }
 
 body {
-    background: url("../images/background.png");
-    background-color: rgb(230, 217, 238);
+    background-color: rgb(206, 206, 206);
     display: flex;
     flex-direction: column;
 }
@@ -95,6 +94,19 @@ ul {
     list-style: circle;
 }
 
+/* SKILLS */
+.skillset {
+    padding-bottom: 30px;
+}
+
+.skill-progress {
+    background: gray;
+    border: 1px solid gray;
+    border-radius: 15px;
+    width: 95%;
+    height: 2vh;
+}
+
 /* PORTFOLIO PROJECTS */
 
 .portfolio-project {
@@ -113,13 +125,3 @@ a {
     font-weight: bold;
 }
 
-/* WORK EXPERIENCE */
-/* EDUCATION */
-
-.work-title,
-.education-title {
-    font-size: 1.25em;
-    font-weight: 700;
-    padding-right: 5px;
-    color: rgb(102, 102, 102);
-}
