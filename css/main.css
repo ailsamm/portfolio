@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:700|Baloo+Da+2|Inter|Open+Sans+Condensed:300|PT+Sans&display=swap');
+
+/* DARK GRAY color: rgb(116, 116, 116); */
+/* LIGHT GRAY color: rgb(116, 116, 116); */
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+    font-family: Inter, Helvetica, sans-serif;
+    color: rgb(116, 116, 116);
+}
+
+body {
+    background: url("../images/background.png");
+    background-color: rgb(230, 217, 238);
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: rgb(250, 248, 248);
+    margin: 20px;
+    border-radius: 10px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    background: rgb(250, 248, 248);
+    border-radius: 10px;  
+    padding: 5px 20px;
+    margin: 20px;
+}
+
+.headshot {
+    width: 150px;
+    border: 3px solid rgb(116, 116, 116);
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.intro-section {
+    padding-top: 20px;
+}
+
+.name {
+    font-family: Ubuntu, Helvetica, sans-serif;
+    color: rgb(102, 102, 102);
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.job-title {
+    margin: 10px auto;
+}
+
+.social-media-icons {
+    padding: 10px;
+}
+
+.social-media-icon {
+    padding: 10px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+.location-container {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.location {
+    display: inline;
+    padding-left: 1vh;
+}
+
+ul {
+    list-style: circle;
+}
+
+/* PORTFOLIO PROJECTS */
+
+.portfolio-project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.project-screenshot {
+    width: 90%;
+    height: 90%;
+}
+
+a {
+    font-weight: bold;
+}
+
+/* WORK EXPERIENCE */
+/* EDUCATION */
+
+.work-title,
+.education-title {
+    font-size: 1.25em;
+    font-weight: 700;
+    padding-right: 5px;
+    color: rgb(102, 102, 102);
+}
