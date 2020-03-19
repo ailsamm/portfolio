@@ -25,6 +25,7 @@ body {
 header {
     background: rgb(250, 248, 248);
     margin: 20px;
+    padding: 20px;
     border-radius: 10px;    
     display: flex;
     flex-direction: column;
@@ -44,6 +45,7 @@ section {
     border-radius: 10px;  
     padding: 5px 20px;
     margin: 20px;
+    font-size: 20px;
 }
 
 .headshot {
@@ -103,11 +105,20 @@ ul {
     padding-bottom: 30px;
 }
 
-.skill-progress {
-    background: rgb(214, 119, 218);
-    border-radius: 15px;
-    width: 98%;
-    height: 20px;
+.progress {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 20px;
+}
+  
+.progress-bar {
+    width: 10%;
+    height: 30px;
+    border-radius: 20px;
+    background-color: rgb(214, 119, 218);
+    text-align: center;
+    line-height: 30px;
+    color: white;
 }
 
 /* PORTFOLIO PROJECTS */
@@ -141,15 +152,22 @@ blockquote {
     border-left: 10px solid rgb(214, 119, 218);
     margin: 1.5em 10px;
     padding: 0.5em 10px;
-    quotes: "\201C""\201D""\2018""\2019";
+    quotes: "\201C""\201D";
 }
 
-blockquote:before {
+blockquote:before,
+blockquote:after {
     color: rgb(214, 119, 218);
-    content: open-quote;
     font-size: 4em;
     line-height: 0.1em;
     margin-right: 0.25em;
     vertical-align: -0.4em;
 }
 
+blockquote:before {
+    content: open-quote;
+}
+
+blockquote:after {
+    content: close-quote;
+}
