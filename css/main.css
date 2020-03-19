@@ -104,9 +104,9 @@ ul {
 }
 
 .skill-progress {
-    background: rgb(200, 177, 201);
+    background: rgb(214, 119, 218);
     border-radius: 15px;
-    width: 95%;
+    width: 98%;
     height: 20px;
 }
 
@@ -124,10 +124,6 @@ ul {
     height: 90%;
 }
 
-a {
-    font-weight: bold;
-}
-
 /* WORK EXPERIENCE */
 /* EDUCATION */
 
@@ -138,3 +134,22 @@ a {
     padding-right: 5px;
     color: rgb(102, 102, 102);
 }
+
+/* TESTIMONIALS */  
+blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid rgb(214, 119, 218);
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+    color: rgb(214, 119, 218);
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
