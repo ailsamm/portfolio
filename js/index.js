@@ -1,4 +1,5 @@
 $('.progress-bar').css('width', '0');
+
 function showProgress() {
     $(window).on('load', function() {
         $('.progress-bar').each(function() {
@@ -10,6 +11,5 @@ function showProgress() {
 
     });
 }
-
 
 $(showProgress);

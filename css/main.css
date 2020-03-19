@@ -1,29 +1,58 @@
 @import url('https://fonts.googleapis.com/css?family=Karla|Open+Sans+Condensed:300&display=swap');
 
-/* DARK GRAY color: rgb(116, 116, 116); */
-/* LIGHT GRAY color: rgb(116, 116, 116); */
+:root {
+    --main-bg-colour: rgb(77, 187, 178, 0.5);
+    --main-section-bg-colour: rgb(250, 248, 248); 
+    --main-accent-colour: rgb(214, 119, 218);  
+    --main-title-colour: rgb(97, 97, 97); 
+    --main-text-colour: rgb(116, 116, 116); 
+  }
 
 *,
 *:before,
 *:after {
 	box-sizing: border-box;
     font-family: Karla, Helvetica, sans-serif;
-    color: rgb(116, 116, 116);
+    color: var(--main-text-colour);
 }
 
 .title {
     font-family: "Open Sans", Helvetica, sans-serif;
+    color: var(--main-title-colour);
 }
 
 body {
-    /*background: url("../images/background.png");*/
-    background-color: rgb(77, 187, 178, 0.5);
+    background-color: var(--main-bg-colour);
     display: flex;
     flex-direction: column;
 }
 
+main {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    background: var(--main-section-bg-colour);
+    border-radius: 10px;  
+    padding: 5px 20px;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* HEADER */
+
 header {
-    background: rgb(250, 248, 248);
+    background: var(--main-section-bg-colour);
     margin: 20px;
     padding: 20px;
     border-radius: 10px;    
@@ -34,33 +63,15 @@ header {
     text-align: center;
 }
 
-main {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-section {
-    background: rgb(250, 248, 248);
-    border-radius: 10px;  
-    padding: 5px 20px;
-    margin: 20px;
-    font-size: 20px;
-}
-
 .headshot {
     width: 150px;
-    border: 3px solid rgb(116, 116, 116);
+    border: 3px solid var(--main-title-colour);
     border-radius: 50%;
     margin: 10px;
 }
 
-.intro-section {
-    padding-top: 20px;
-}
-
 .name {
-    color: rgb(102, 102, 102);
+    color: var(--main-title-colour);
     font-weight: 700;
     margin-bottom: 0;
 }
@@ -77,14 +88,6 @@ section {
     padding: 10px;
 }
 
-.bold {
-    font-weight: 700;
-}
-
-a {
-    text-decoration: none;
-}
-
 .location-container {
     display: flex;
     align-items: center;
@@ -96,6 +99,12 @@ a {
     padding-left: 1vh;
 }
 
+/* INTRO */
+
+.intro-section {
+    padding-top: 20px;
+}
+
 ul {
     list-style: circle;
 }
@@ -103,6 +112,14 @@ ul {
 /* SKILLS */
 .skillset {
     padding-bottom: 30px;
+}
+
+.skill {
+    margin-bottom: 5vh;
+}
+
+.skill-title {
+    margin-bottom: 10px;
 }
 
 .progress {
@@ -115,7 +132,7 @@ ul {
     width: 10%;
     height: 30px;
     border-radius: 20px;
-    background-color: rgb(214, 119, 218);
+    background-color: var(--main-accent-colour);
     text-align: center;
     line-height: 30px;
     color: white;
@@ -135,6 +152,10 @@ ul {
     height: 90%;
 }
 
+.project-links > a {
+    color: var(--main-accent-colour);
+}
+
 /* WORK EXPERIENCE */
 /* EDUCATION */
 
@@ -149,7 +170,7 @@ ul {
 /* TESTIMONIALS */  
 blockquote {
     background: #f9f9f9;
-    border-left: 10px solid rgb(214, 119, 218);
+    border-left: 10px solid var(--main-accent-colour);
     margin: 1.5em 10px;
     padding: 0.5em 10px;
     quotes: "\201C""\201D";
@@ -157,7 +178,7 @@ blockquote {
 
 blockquote:before,
 blockquote:after {
-    color: rgb(214, 119, 218);
+    color: var(--main-accent-colour);
     font-size: 4em;
     line-height: 0.1em;
     margin-right: 0.25em;
