@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:700|Baloo+Da+2|Inter|Open+Sans+Condensed:300|PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Karla|Open+Sans+Condensed:300&display=swap');
 
 /* DARK GRAY color: rgb(116, 116, 116); */
 /* LIGHT GRAY color: rgb(116, 116, 116); */
@@ -7,13 +7,17 @@
 *:before,
 *:after {
 	box-sizing: border-box;
-    font-family: Inter, Helvetica, sans-serif;
+    font-family: Karla, Helvetica, sans-serif;
     color: rgb(116, 116, 116);
 }
 
+.title {
+    font-family: "Open Sans", Helvetica, sans-serif;
+}
+
 body {
-    background: url("../images/background.png");
-    background-color: rgb(230, 217, 238);
+    /*background: url("../images/background.png");*/
+    background-color: rgb(77, 187, 178, 0.5);
     display: flex;
     flex-direction: column;
 }
@@ -54,7 +58,6 @@ section {
 }
 
 .name {
-    font-family: Ubuntu, Helvetica, sans-serif;
     color: rgb(102, 102, 102);
     font-weight: 700;
     margin-bottom: 0;
@@ -101,11 +104,10 @@ ul {
 }
 
 .skill-progress {
-    background: gray;
-    border: 1px solid gray;
+    background: rgb(200, 177, 201);
     border-radius: 15px;
     width: 95%;
-    height: 2vh;
+    height: 20px;
 }
 
 /* PORTFOLIO PROJECTS */
