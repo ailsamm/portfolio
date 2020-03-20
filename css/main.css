@@ -4,8 +4,9 @@
     --main-bg-colour: rgb(77, 187, 178, 0.5);
     --main-section-bg-colour: rgb(250, 248, 248); 
     --main-accent-colour: rgb(214, 119, 218);  
-    --main-title-colour: rgb(97, 97, 97); 
+    --main-title-colour: #616161; 
     --main-text-colour: rgb(116, 116, 116); 
+    --main-icon-colour: #616161; 
   }
 
 *,
@@ -170,6 +171,10 @@ li {
 .project-links > a {
     color: var(--main-accent-colour);
 }
+
+.tech-icon {
+    height: 1.3em;
+  }
 
 /* EDUCATION */
 
