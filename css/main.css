@@ -16,9 +16,9 @@
     color: var(--main-text-colour);
 }
 
-.title {
-    font-family: "Open Sans", Helvetica, sans-serif;
-    color: var(--main-title-colour);
+html,
+body {
+    overflow-x: hidden;
 }
 
 body {
@@ -31,6 +31,8 @@ main {
     width: 100%;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 section {
@@ -39,6 +41,11 @@ section {
     padding: 5px 20px;
     margin: 20px;
     font-size: 20px;
+}
+
+.title {
+    font-family: "Open Sans", Helvetica, sans-serif;
+    color: var(--main-title-colour);
 }
 
 .bold {
@@ -67,7 +74,7 @@ header {
     width: 150px;
     border: 3px solid var(--main-title-colour);
     border-radius: 50%;
-    margin: 10px;
+    margin: 20px 40px;
 }
 
 .name {
@@ -89,9 +96,10 @@ header {
 }
 
 .location-container {
-    display: flex;
-    align-items: center;
     margin: 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .location {
@@ -100,6 +108,8 @@ header {
 }
 
 /* INTRO */
+.introduction {
+}
 
 .intro-section {
     padding-top: 20px;
@@ -130,7 +140,7 @@ ul {
   
 .progress-bar {
     width: 10%;
-    height: 30px;
+    height: 2vh;
     border-radius: 20px;
     background-color: var(--main-accent-colour);
     text-align: center;
@@ -191,4 +201,69 @@ blockquote:before {
 
 blockquote:after {
     content: close-quote;
+}
+
+@media only screen and (min-width: 700px) {
+
+    /* LAYOUT */
+
+    .first-column {
+        width: 65vw;
+    }
+
+    .second-column {
+        width: 35vw;
+    }
+
+    main {
+        flex-direction: row;
+    }
+
+    
+
+
+    /* OTHER */
+
+    header {
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .headshot {
+        margin: 30px 6vw;
+    }
+
+    .main-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .location-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .location {
+        justify-self: center;
+        align-self: center;
+    }
+
+    .social-media-icons {
+        display: flex;
+        flex-direction: column;
+        align-items: space-around;    
+        display: relative;
+        right: 10px;    
+    }
+
+    .social-media-icon {
+        padding: 0;
+    }
 }

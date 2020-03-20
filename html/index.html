@@ -11,115 +11,123 @@
 <body>
     <header>
         <img class="headshot" src="../images/me.jpg" alt="Ailsa Headshot">
-        <h1 class="title header-item name">Ailsa Meechan-Maddon</h1>
-        <h2 class="header-item job-title">Full-stack Software Developer</h2>
-        <div class="header-item location-container">
-            <img alt="Location pin" src="../images/pin.svg" width="25" height="25">
-            <p class="location">Orange County, CA</p>
+        <div class="main-infor">
+            <h1 class="title header-item name">Ailsa Meechan-Maddon</h1>
+            <h2 class="header-item job-title">Full-stack Software Developer</h2>
+            <div class="header-item location-container">
+                <img alt="Location pin" src="../images/pin.svg" width="25" height="25">
+                <p class="location">Orange County, CA</p>
+            </div>
         </div>
+        
         <div class="header-item social-media-icons">
-            <a class="social-media-icon" href="https://www.linkedin.com/in/ailsa-meechan/">
+            <a class="social-media-icon" href="https://www.linkedin.com/in/ailsa-meechan/" target="_blank">
                 <img alt="LinkedIn link" src="../images/linkedin.svg" width="25" height="25">
             </a>
-            <a class="social-media-icon" href="https://github.com/ailsamm/">
+            <a class="social-media-icon" href="https://github.com/ailsamm/" target="_blank">
                 <img alt="GitHub link" src="../images/github.svg" width="25" height="25">
             </a>
-            <a class="social-media-icon" href="https://aboutme.google.com/u/0/?referer=gplus">
+            <a class="social-media-icon" href="https://aboutme.google.com/u/0/?referer=gplus" target="_blank">
                 <img alt="Google Plus link" src="../images/google-plus.svg" width="25" height="25">
             </a>
         </div>
     </header>
     <main>
-        <section class="introduction">
-            <p class="intro-section">Hi there! I'm <span class="bold">Ailsa</span>. I'm a <span class="bold">full-stack developer</span> originally from Scotland.</p>
-            <p class="intro-section">Let me tell you a little bit about myself:</p>
-            <ul class="about-me">
-                <li>I love weightlifting and going on long walks with my dog.</li>
-                <li>I've lived in 5 different countries, but am proud to call sunny California home now.</li>
-                <li>on weekends, you can usually find me in the great outdoors</li>
-            </ul>
-            <p class="intro-section">Also, I should probably tell you that I get <span class="bold">really</span> excited about:</p>
-            <ul class="skills">
-                <li>building innovative and interactive UIs and maximising user experience.</li>
-                <li>working together in diverse and communicative teams</li>
-                <li>learning anything that I can get my hands on</li>
-            </ul>
-        </section>
+        <div class="first-column">
+            <section class="introduction">
+                <p class="intro-section">Hi there! I'm <span class="bold">Ailsa</span>. I'm a <span class="bold">full-stack developer</span> originally from Scotland.</p>
+                <p class="intro-section">Let me tell you a little bit about myself:</p>
+                <ul class="about-me">
+                    <li>I love weightlifting and going on long walks with my dog.</li>
+                    <li>I've lived in 5 different countries, but am proud to call sunny California home now.</li>
+                    <li>on weekends, you can usually find me somewhere in the great outdoors</li>
+                </ul>
+                <p class="intro-section">Also, I should probably tell you that I get <span class="bold">really</span> excited about:</p>
+                <ul class="skills">
+                    <li>building innovative and interactive UIs and maximising user experience.</li>
+                    <li>working together in diverse and communicative teams</li>
+                    <li>learning anything that I can get my hands on</li>
+                </ul>
+            </section>
 
-        <section class="skillset">
-            <h2 class="title">Skills:</h2>
+            <section class="projects">
+                <h2 class="title">Latest projects:</h2>
+                <div class="portfolio-project">
+                    <h3 class="title">Travel Quiz</h3>
+                    <img class="project-screenshot" src="../images/travelQuiz2.png" alt="Travel Quiz screenshot">
+                    <p class="project-description">Test your knowledge of travel and culture as you pit your wits against a challenge of world expertise.
+                        Responsively built using JS and jQuery, with a11y guidelines in mind, this app can be enjoyed by both young and old. You may even
+                        learn a thing or two!
+                    </p>
+                    <p class="project-links"><a href="https://github.com/ailsamm/travelQuiz">GitHub</a> | <a href="https://ailsamm.github.io/travelQuiz/src/html/">Demo</a></p>
+                </div>
+                <hr class="divider">
+                <div class="portfolio-project">
+                    <h3 class="title">Another Project</h3>
+                    <img class="project-screenshot" src="../images/travelQuiz.png" alt="Travel Quiz screenshot">
+                    <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus mi rhoncus leo vulputate blandit. 
+                        Aliquam libero tortor, ornare eget ornare sit amet, porta vel justo. Aenean laoreet, ex et vehicula imperdiet, elit purus venenatis 
+                        ligula, at gravida enim mauris ut dui. In hac habitasse platea dictumst. Donec at orci magna. Quisque pulvinar, nisl sed imperdiet 
+                        efficitur, mi erat auctor nisl, et convallis dolor est sed ante. Integer eu tellus molestie, hendrerit dui sit amet, rhoncus turpis. 
+                    </p>
+                    <p class="project-links"><a href="https://github.com/ailsamm/travelQuiz">GitHub</a> | <a href="https://ailsamm.github.io/travelQuiz/src/html/">Demo</a></p>
+                </div>
+            </section>
+        </div>
 
-            <div class="skill">
-                <p class="skill-title">HTML & CSS</p>
-                <div class="progress">
-                    <div data-progress=90 class="progress-bar"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <p class="skill-title">Javascript</p>
-                <div class="progress">
-                    <div data-progress=90 class="progress-bar"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <p class="skill-title">jQuery</p>
-                <div class="progress">
-                    <div data-progress=90 class="progress-bar"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <p class="skill-title">Java</p>
-                <div class="progress">
-                    <div data-progress=80 class="progress-bar"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <p class="skill-title">Python</p>
-                <div class="progress">
-                    <div data-progress=75 class="progress-bar"></div>
-                </div>
-            </div>
-        </section>
+        <div class="second-column">
+            <section class="skillset">
+                <h2 class="title">Skills:</h2>
 
-        <section class="projects">
-            <h2 class="title">Latest projects:</h2>
-            <div class="portfolio-project">
-                <h3 class="title">Travel Quiz</h3>
-                <img class="project-screenshot" src="../images/travelQuiz2.png" alt="Travel Quiz screenshot">
-                <p class="project-description">Test your knowledge of travel and culture as you pit your wits against a challenge of world expertise.
-                    Responsively built using JS and jQuery, with a11y guidelines in mind, this app can be enjoyed by both young and old. You may even
-                    learn a thing or two!
-                </p>
-                <p class="project-links"><a href="https://github.com/ailsamm/travelQuiz">GitHub</a> | <a href="https://ailsamm.github.io/travelQuiz/src/html/">Demo</a></p>
-            </div>
-            <hr class="divider">
-            <div class="portfolio-project">
-                <h3 class="title">Another Project</h3>
-                <img class="project-screenshot" src="../images/travelQuiz.png" alt="Travel Quiz screenshot">
-                <p class="project-description">This is just to test layouts. This is just to test layouts.
-                     This is just to test layouts. This is just to test layouts. This is just to test layouts.
-                     This is just to test layouts. This is just to test layouts.
-                </p>
-                <p class="project-links"><a href="https://github.com/ailsamm/travelQuiz">GitHub</a> | <a href="https://ailsamm.github.io/travelQuiz/src/html/">Demo</a></p>
-            </div>
-        </section>
+                <div class="skill">
+                    <p class="skill-title">HTML & CSS</p>
+                    <div class="progress">
+                        <div data-progress=90 class="progress-bar"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p class="skill-title">Javascript</p>
+                    <div class="progress">
+                        <div data-progress=90 class="progress-bar"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p class="skill-title">jQuery</p>
+                    <div class="progress">
+                        <div data-progress=90 class="progress-bar"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p class="skill-title">Java</p>
+                    <div class="progress">
+                        <div data-progress=80 class="progress-bar"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p class="skill-title">Python</p>
+                    <div class="progress">
+                        <div data-progress=75 class="progress-bar"></div>
+                    </div>
+                </div>
+            </section>
 
-        <section class="testimonials">
-            <h2 class="title">Testimonials:</h2>
-            <blockquote class="testimonial">As an extremely knowledgeable developer in software field, she always 
-                has an enthusiastic, creative skills to implement effective solutions that the client need and her 
-                work is timely as well. She is really capable of adapting to new working environments and learn things 
-                quickly. As a valuable teamplayer, she brings a contagious can-do attitude that can get any team on 
-                their feet and working at full capacity.<br/><br/>
+            <section class="testimonials">
+                <h2 class="title">Testimonials:</h2>
+                <blockquote class="testimonial">As an extremely knowledgeable developer in software field, she always 
+                    has an enthusiastic, creative skills to implement effective solutions that the client need and her 
+                    work is timely as well. She is really capable of adapting to new working environments and learn things 
+                    quickly. As a valuable teamplayer, she brings a contagious can-do attitude that can get any team on 
+                    their feet and working at full capacity.<br/><br/>
+                    
+                </blockquote>
                 
-            </blockquote>
-            
-            <blockquote class="testimonial">[A]part from being a good developer, she has the greatest talent of 
-                self-organisation, communication and committment. These really are the stand-out factors that made 
-                her one of the most iconic members in my team. She has never let me and my team down. I am very sure 
-                that she will be a great resource to any new team she joins.<br/><br/>
-            </blockquote>
-        </section>
+                <blockquote class="testimonial">[A]part from being a good developer, she has the greatest talent of 
+                    self-organisation, communication and committment. These really are the stand-out factors that made 
+                    her one of the most iconic members in my team. She has never let me and my team down. I am very sure 
+                    that she will be a great resource to any new team she joins.<br/><br/>
+                </blockquote>
+            </section>
+        </div>
 
         <!-- <section class="work-experience">
             <h2 class="title">Work Experience:</h2>
