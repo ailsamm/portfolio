@@ -48,8 +48,9 @@ section {
     color: var(--main-title-colour);
 }
 
-.bold {
+.emphasis {
     font-weight: 700;
+    color: var(--main-accent-colour);
 }
 
 a {
@@ -119,6 +120,10 @@ ul {
     list-style: circle;
 }
 
+li {
+    line-height: 1.5;
+}
+
 /* SKILLS */
 .skillset {
     padding-bottom: 30px;
@@ -166,15 +171,18 @@ ul {
     color: var(--main-accent-colour);
 }
 
-/* WORK EXPERIENCE */
 /* EDUCATION */
 
-.work-title,
 .education-title {
-    font-size: 1.25em;
+    font-size: 1em;
     font-weight: 700;
     padding-right: 5px;
     color: rgb(102, 102, 102);
+}
+
+.education-institute,
+.education-dates {
+    color: var(--main-accent-colour);
 }
 
 /* TESTIMONIALS */  
@@ -186,8 +194,7 @@ blockquote {
     quotes: "\201C""\201D";
 }
 
-blockquote:before,
-blockquote:after {
+blockquote:before {
     color: var(--main-accent-colour);
     font-size: 4em;
     line-height: 0.1em;
@@ -199,11 +206,34 @@ blockquote:before {
     content: open-quote;
 }
 
-blockquote:after {
-    content: close-quote;
+.quote-reference {
+    font-size: 0.75em;
+    text-align: right;
+    margin-top: 0;
 }
 
-@media only screen and (min-width: 700px) {
+.quote-link:hover {
+    text-decoration: underline;
+    color: var(--main-accent-colour);
+}
+
+/*THIS IS NOT WORKING FOR NOW*/
+@media only screen and (max-width: 699px) {
+    .introduction {
+        order: 1;
+    }
+    .skillset {
+        order: 2;
+    }
+    .projects {
+        order:3;
+    }
+    .testimonials {
+        order:4;
+    }
+}
+
+@media only screen and (min-width: 750px) {
 
     /* LAYOUT */
 
@@ -217,9 +247,7 @@ blockquote:after {
 
     main {
         flex-direction: row;
-    }
-
-    
+    }  
 
 
     /* OTHER */
