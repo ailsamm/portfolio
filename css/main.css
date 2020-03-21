@@ -129,6 +129,10 @@ header {
     color: #FFF;
 }
 
+.email-button:hover {
+    cursor: pointer;
+}
+
 .fa-envelope {
     margin-right: 1vw;
 }
@@ -244,7 +248,7 @@ blockquote:before {
 }
 
 .quote-reference {
-    font-size: 0.75em;
+    font-size: 0.85em;
     text-align: right;
     margin-top: 0;
 }
@@ -343,7 +347,7 @@ blockquote:before {
         align-items: space-around;  
         font-size: 30px;    
         position: absolute;
-        right: 2vw;          
+        right: 3vw;          
     }
 
     .social-media-icon {
