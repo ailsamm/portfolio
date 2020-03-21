@@ -7,12 +7,13 @@
     --main-title-colour: #616161; 
     --main-text-colour: rgb(116, 116, 116); 
     --main-icon-colour: #616161; 
+    --main-text-accent-colour: rgb(150, 150, 150);
   }
 
 *,
 *:before,
 *:after {
-	box-sizing: border-box;
+    box-sizing: border-box;
     font-family: Karla, Helvetica, sans-serif;
     color: var(--main-text-colour);
 }
@@ -51,7 +52,7 @@ section {
 
 .emphasis {
     font-weight: 700;
-    color: var(--main-accent-colour);
+    color: var(--main-title-colour);
 }
 
 a {
@@ -87,14 +88,22 @@ header {
 
 .job-title {
     margin: 10px auto;
+    color: rgb(150, 150, 150);
 }
 
 .social-media-icons {
+    font-size: 25px;
     padding: 10px;
 }
 
 .social-media-icon {
-    padding: 10px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.social-media-icon > img{
+    width: 30px;
+    height: 30px;
 }
 
 .location-container {
@@ -106,12 +115,29 @@ header {
 
 .location {
     display: inline;
-    padding-left: 1vh;
+    padding-left: 1vw;
+    color: var(--main-text-accent-colour);
+}
+
+.email-button {
+    background-color: var(--main-accent-colour);
+    border-radius: 3px;
+    border: none;
+    padding: 5px 10px;
+    margin: 15px 0;
+    font-size: 20px;
+    color: #FFF;
+}
+
+.fa-envelope {
+    margin-right: 1vw;
+}
+
+.fa-envelope path {
+    color: #FFF;
 }
 
 /* INTRO */
-.introduction {
-}
 
 .intro-section {
     padding-top: 20px;
@@ -182,12 +208,18 @@ li {
     font-size: 1em;
     font-weight: 700;
     padding-right: 5px;
-    color: rgb(102, 102, 102);
+    color: var(--main-text-colour);
 }
 
 .education-institute,
 .education-dates {
     color: var(--main-accent-colour);
+}
+
+.fa-graduation-cap {
+    vertical-align: middle;
+    margin-right: 1vw;
+    fill: blue;
 }
 
 /* TESTIMONIALS */  
@@ -215,6 +247,11 @@ blockquote:before {
     font-size: 0.75em;
     text-align: right;
     margin-top: 0;
+}
+
+.quote-link {
+    font-variant: small-caps;
+    font-size: 20px;
 }
 
 .quote-link:hover {
@@ -264,39 +301,69 @@ blockquote:before {
         border-radius: 0;
         flex-direction: row;
         justify-content: flex-start;
+        text-align: left;
+    }
+
+    .name {
+        font-size: 2.5em;
+        letter-spacing: 0.06em;
+        max-width: 475px;
     }
 
     .headshot {
         margin: 30px 6vw;
+        border: none;
+        height: 25vh;
+        width: auto;
+        padding-left: 0;
     }
 
-    .main-info {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+    .job-title {
+        padding-left: 0;
+        margin-bottom: 0;
     }
 
     .location-container {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
+        margin: 0;
     }
 
     .location {
         justify-self: center;
         align-self: center;
+        font-size: 1.25em;
     }
 
     .social-media-icons {
         display: flex;
         flex-direction: column;
-        align-items: space-around;    
-        display: relative;
-        right: 10px;    
+        align-items: space-around;  
+        font-size: 30px;    
+        position: absolute;
+        right: 2vw;          
     }
 
     .social-media-icon {
-        padding: 0;
+        padding: 7px;
+        margin: 5px;
+    }
+
+    .social-media-icon > img{
+        width: 5vw;
+        height: 5vh;
+    }
+}
+
+
+@media only screen and (min-width: 920px) {
+    .name {
+        max-width: none;
+    }
+
+    .social-media-icons {
+        right: 2vw;    
     }
 }
