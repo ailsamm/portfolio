@@ -72,7 +72,6 @@
      color: var(--main-accent-colour);
 }
  .job-title {
-     margin: 10px auto;
      color: rgb(150, 150, 150);
 }
  .social-media-icons {
@@ -98,17 +97,22 @@
      padding-left: 1vw;
      color: var(--main-text-accent-colour);
 }
- .email-button {
+.main-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+ .email-link {
      font-family: Comfortaa, Helvetica, sans-serif;
      background-color: var(--main-accent-colour);
      border-radius: 3px;
      border: none;
+     margin: 0 auto 1vh auto;
      padding: 5px 10px;
-     margin: 15px 0;
      font-size: 20px;
      color: #FFF;
 }
- .email-button:hover {
+ .email-link:hover {
      cursor: pointer;
 }
  .fa-envelope {
@@ -213,6 +217,7 @@
      text-decoration: underline;
      color: var(--main-accent-colour);
 }
+
 /*THIS IS NOT WORKING FOR NOW*/
  @media only screen and (max-width: 699px) {
      .introduction {
@@ -252,6 +257,9 @@
          justify-content: flex-start;
          text-align: left;
     }
+    .email-link {
+        margin: 0 0 1vh 0;
+    }
      .name {
          font-size: 2.5em;
          letter-spacing: 0.06em;
@@ -263,10 +271,6 @@
          height: 25vh;
          width: auto;
          padding-left: 0;
-    }
-     .job-title {
-         padding-left: 0;
-         margin-bottom: 0;
     }
      .location-container {
          display: flex;
