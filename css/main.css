@@ -84,6 +84,14 @@ header {
      margin-bottom: 0;
 }
 
+.introduction > h2.title {
+    margin-bottom: 0;
+}
+
+.introduction .intro-section:first-of-type {
+    margin-top: 1vh;
+}
+ 
 .intro-section a:hover * {
      color: var(--main-accent-colour);
 }
