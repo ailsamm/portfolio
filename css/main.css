@@ -21,7 +21,9 @@ html, body {
 }
 
 body {
-    background-color: var(--main-bg-colour);
+    background-image: linear-gradient(to bottom right, #e2f7f6, var(--main-bg-colour),#e2f7f6);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
 }
