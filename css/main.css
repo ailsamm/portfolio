@@ -203,7 +203,7 @@ li {
      width: 10%;
      height: 2vh;
      border-radius: 20px;
-     background: linear-gradient(to right, #a783bf, #9d90cd, #90abcd, #90cdc7);
+     background: linear-gradient(to right, var(--main-pink), var(--main-purple), var(--main-blue), var(--main-green));
      text-align: center;
      line-height: 30px;
      color: white;
@@ -281,7 +281,7 @@ blockquote {
      border-image: 
     linear-gradient(
       to bottom, 
-    #90cdc7, #c1e6e2, #cfe7e5, #FFF
+    var(--main-green), #c1e6e2, #cfe7e5, #FFF
     ) 1 100%;
      margin: 1.5em 10px;
      padding: 0.5em 10px;
@@ -313,7 +313,7 @@ blockquote:before {
 }
 
 .quote-link:hover {
-     background-color: #d777da8f;
+     background-color: var(--main-green);
      border-radius: 70px;
      color: #FFF;
 }
