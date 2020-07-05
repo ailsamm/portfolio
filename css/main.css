@@ -102,7 +102,7 @@ header {
 }
 
 .fa-map-pin > * {
-    fill: #a783bf;
+    fill: #90cdc7;
     font-size: 2em;
 }
 
@@ -116,9 +116,10 @@ header {
     width: 8vh;
     height: 8vh;
     text-align: center;
-    line-height: 7vh;
+    line-height: 6vh;
     vertical-align: middle;
-    padding: 30px;
+    padding: 7px;
+    box-shadow: 0px 0px 4px #dadada;
 }
 
 .social-media-icon:hover {
@@ -134,18 +135,15 @@ header {
 }
 
 .social-media-icons {
-     font-size: 25px;
-     padding: 10px;
+    font-size: 30px;
+    padding: 5px;
+    display: flex;
+    align-items: space-around;
 }
 
 .social-media-icon {
      margin: 10px;
-     padding: 5px;
-}
-
-.social-media-icon > img{
-     width: 30px;
-     height: 30px;
+     padding: 10px;
 }
 
 .location-container {
@@ -162,34 +160,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.email-link {
-     background-color: #FFF;
-     border-radius: 3px;
-     border: 1px solid var(--main-accent-colour);
-     margin: 0 auto 1vh auto;
-     padding: 5px 10px;
-     font-size: 20px;
-     color: var(--main-accent-colour);
-}
-
-.email-link:hover {
-     cursor: pointer;
-     background-color: var(--main-accent-colour);
-     color: #FFF;
-}
-
-.email-link path {
-    color: var(--main-accent-colour);
-}
-
-.email-link:hover path {
-    color: #FFF;
-}
-
-.fa-envelope {
-     margin-right: 1vw;
 }
 
 /* INTRO */
@@ -353,15 +323,15 @@ footer {
 @media only screen and (min-width: 450px) {
    
     .location-container {
-            display: flex;
-            margin: 10px;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
+        display: flex;
+        margin: 10px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
    
     .job-title {
-            margin-bottom: 0vh;
+        margin-bottom: 0vh;
     }
 }
 
@@ -389,8 +359,9 @@ footer {
 
     /* OTHER */
      header {
+         border: 1px solid #FFF;
          width: 100vw;
-         margin: 0;
+         margin: 3vh 0 0 0;
          padding: 0;
          border-radius: 0;
          flex-direction: row;
@@ -431,22 +402,16 @@ footer {
     }
         
     .social-media-icons {
-        display: flex;
         flex-direction: column;
-        align-items: space-around;
         font-size: 30px;
         position: absolute;
         right: 3vw;
     }
     
     .social-media-icon {
+        line-height: 7vh;
         padding: 7px;
         margin: 5px;
-    }
-    
-    .social-media-icon > img{
-        width: 5vw;
-        height: 5vh;
     }
 }
  @media only screen and (min-width: 920px) {
