@@ -110,6 +110,28 @@ header {
     font-size: 1.5em;
 }
 
+.social-media-icon {
+    background: #FFF;
+    border-radius: 50%;
+    width: 8vh;
+    height: 8vh;
+    text-align: center;
+    line-height: 7vh;
+    vertical-align: middle;
+    padding: 30px;
+}
+
+.social-media-icon:hover {
+    background: #90cdc7;
+}
+
+.social-media-icon path {
+    fill: #90cdc7;
+}
+
+.social-media-icon:hover path {
+    fill: #FFF;
+}
 
 .social-media-icons {
      font-size: 25px;
