@@ -1,18 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Karla:900|Comfortaa|Nunito|Open+Sans+Condensed:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:wght@100;900&family=Open+Sans:wght@800&display=swap');
 
 :root {
-    --main-bg-colour: #4dbbb280;
-    --main-section-bg-colour: #faf8f8;
-    --main-accent-colour: #a783bf;
+    --main-section-bg-colour: #fbf9f9;
+    --main-pink: #a783bf;
+    --main-purple:  #9d90cd;
+    --main-blue: #90abcd;
+    --main-green: #90cdc7;
     --main-title-colour: #616161;
     --main-text-colour: #747474;
-    --main-icon-colour: #616161;
     --main-text-accent-colour: #969696;
 }
 
 *, *:before, *:after {
     box-sizing: border-box;
-    font-family: "Nunito", Helvetica, sans-serif;
+    font-family: "Montserrat", Helvetica, sans-serif;
     color: var(--main-text-colour);
 }
 
@@ -46,8 +47,9 @@ section {
 }
 
 .title {
-     font-family: "Open Sans", Helvetica, sans-serif;
+    letter-spacing: 0.1em;
      color: var(--main-title-colour);
+     font-weight: 900;
 }
 
 .emphasis {
@@ -61,15 +63,16 @@ a {
 
 /* HEADER */
 header {
-     background: linear-gradient(to right, #f9f0ff, #f9f3fc, #f0eaf4, #e6dbed, #f9f0ff);
-     margin: 20px;
-     padding: 20px;
-     border-radius: 10px;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     text-align: center;
+    border: 7px solid var(--main-green);  
+    background: #FFF;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .headshot {
@@ -93,7 +96,7 @@ header {
 }
  
 .intro-section a:hover * {
-     color: var(--main-accent-colour);
+     color: var(--main-pink);
 }
 
 .job-title {
@@ -102,7 +105,7 @@ header {
 }
 
 .fa-map-pin > * {
-    fill: #90cdc7;
+    fill: var(--main-purple);
     font-size: 2em;
 }
 
@@ -123,11 +126,12 @@ header {
 }
 
 .social-media-icon:hover {
-    background: #90cdc7;
+    /*background: var(--main-purple);*/
+    background: linear-gradient(to right, #a783bfa9, #9d90cd9d, #90abcd9a);
 }
 
 .social-media-icon path {
-    fill: #90cdc7;
+    fill: #9d90cdcc;
 }
 
 .social-media-icon:hover path {
@@ -242,7 +246,7 @@ li {
 }
 
 .project-links > a {
-     color: var(--main-accent-colour);
+     color: var(--main-pink);
 }
 
 .tech-icon {
@@ -262,7 +266,7 @@ li {
 
 .education-institute,
 .education-dates {
-     color: var(--main-accent-colour);
+     color: var(--main-pink);
 }
 
 .fa-graduation-cap {
@@ -273,7 +277,7 @@ li {
 /* TESTIMONIALS */
 blockquote {
      background: #f9f9f9;
-     border-left: 10px solid var(--main-accent-colour);
+     border-left: 10px solid var(--main-pink);
      border-image: 
     linear-gradient(
       to bottom, 
@@ -359,14 +363,15 @@ footer {
 
     /* OTHER */
      header {
-         border: 1px solid #FFF;
-         width: 100vw;
-         margin: 3vh 0 0 0;
-         padding: 0;
-         border-radius: 0;
-         flex-direction: row;
-         justify-content: flex-start;
-         text-align: left;
+        border-left: 0;
+        border-right: 0;
+        width: 100vw;
+        margin: 3vh 0 0 0;
+        padding: 0;
+        border-radius: 0;
+        flex-direction: row;
+        justify-content: flex-start;
+        text-align: left;
     }
    
     .email-link {
