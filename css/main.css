@@ -3,7 +3,7 @@
 :root {
     --main-bg-colour: #4dbbb280;
     --main-section-bg-colour: #faf8f8;
-    --main-accent-colour: #d990db;
+    --main-accent-colour: #a783bf;
     --main-title-colour: #616161;
     --main-text-colour: #747474;
     --main-icon-colour: #616161;
@@ -21,7 +21,7 @@ html, body {
 }
 
 body {
-    background-image: linear-gradient(to bottom right, #e2f7f6, var(--main-bg-colour),#e2f7f6);
+    background: #F1F1F1;
     background-repeat: no-repeat;
     background-attachment: fixed;
     display: flex;
@@ -52,7 +52,7 @@ section {
 
 .emphasis {
      font-weight: 700;
-     color: var(--main-title-colour);
+     color: #87bbb6;
 }
  
 a {
@@ -61,7 +61,7 @@ a {
 
 /* HEADER */
 header {
-     background: var(--main-section-bg-colour);
+     background: linear-gradient(to right, #f9f0ff, #f9f3fc, #f0eaf4, #e6dbed, #f9f0ff);
      margin: 20px;
      padding: 20px;
      border-radius: 10px;
@@ -100,6 +100,16 @@ header {
      color: #969696;
      margin-bottom: 2vh;
 }
+
+.fa-map-pin > * {
+    fill: #a783bf;
+    font-size: 2em;
+}
+
+.fa-map-pin {
+    font-size: 1.5em;
+}
+
 
 .social-media-icons {
      font-size: 25px;
@@ -197,7 +207,7 @@ li {
      width: 10%;
      height: 2vh;
      border-radius: 20px;
-     background-color: var(--main-accent-colour);
+     background: linear-gradient(to right, #a783bf, #9d90cd, #90abcd, #90cdc7);
      text-align: center;
      line-height: 30px;
      color: white;
@@ -266,20 +276,24 @@ li {
 .fa-graduation-cap {
      vertical-align: middle;
      margin-right: 1vw;
-     fill: blue;
 }
 
 /* TESTIMONIALS */
 blockquote {
      background: #f9f9f9;
      border-left: 10px solid var(--main-accent-colour);
+     border-image: 
+    linear-gradient(
+      to bottom, 
+    #90cdc7, #c1e6e2, #cfe7e5, #FFF
+    ) 1 100%;
      margin: 1.5em 10px;
      padding: 0.5em 10px;
      quotes: "\201C""\201D";
 }
 
 blockquote:before {
-     color: var(--main-accent-colour);
+     color: #90cdc7;
      font-size: 4em;
      line-height: 0.1em;
      margin-right: 0.25em;
