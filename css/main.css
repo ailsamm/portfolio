@@ -63,7 +63,7 @@ a {
 
 /* HEADER */
 header {
-    border: 7px solid var(--main-green);  
+    border: 7px solid var(--main-green);
     background: #FFF;
     margin: 20px;
     padding: 20px;
@@ -277,7 +277,7 @@ li {
 /* TESTIMONIALS */
 blockquote {
      background: #f9f9f9;
-     border-left: 10px solid var(--main-pink);
+     border-left: 10px solid var(--main-green);
      border-image: 
     linear-gradient(
       to bottom, 
@@ -339,7 +339,7 @@ footer {
     }
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 800px) {
     /* LAYOUT */
      body {
          margin: auto 0;
@@ -381,7 +381,7 @@ footer {
     .name {
         font-size: 2.5em;
         letter-spacing: 0.06em;
-        max-width: 475px;
+        max-width: 450px;
     }
     
     .headshot {
@@ -422,11 +422,18 @@ footer {
  @media only screen and (min-width: 920px) {
     
     .name {
-        max-width: none;
+        max-width: 600px;
     }
         
     .social-media-icons {
         right: 2vw;
+    }
+}
+
+@media only screen and (min-width: 1050px) {
+    
+    .name {
+        max-width: none;
     }
 }
  
