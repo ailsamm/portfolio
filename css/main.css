@@ -221,6 +221,10 @@ li {
      text-align: center;
 }
 
+.project-description {
+    max-width: 90%;
+}
+
 .portfolio-title {
     margin-bottom: 0;
 }
