@@ -310,6 +310,7 @@ blockquote:before {
      font-variant: small-caps;
      font-size: 20px;
      padding: 0 0.75vw;
+     display: inline-block;
 }
 
 .quote-link:hover {
