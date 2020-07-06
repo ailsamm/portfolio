@@ -20,5 +20,14 @@ function showProgress() {
     });
 }
 
+$('.tech-icon').hover(function(){
+    let c = $(this).data("name");
+    console.log(`here is my thing: ${c}`);
+    tippy('.tech-icon', {
+        theme: 'light',
+        content: c
+    })
+})
+
 //$(playSound);
 $(showProgress);
